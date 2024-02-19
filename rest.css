@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+#logo{
+    width: 150px;
+    height:130px;
+    margin-left: 0px;
+    object-position: center;
+}
+#container{
+    width: 100%;
+    height: 100vh;/* 1vh= 19.2px */
+    position: relative;/* position related to its normal position*/
+    background-color:white;
+    position: fixed;
+}
+
+.navbar{
+    align-items: center;
+    display: flex;
+    background-color: rgb(101, 32, 32);
+    margin-left: 0px;
+    
+    
+}
+.linkitem{
+    list-style: none;
+    margin: 30px 70px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px  rgb(217, 255, 0);
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.links:hover{
+    text-transform: lowercase;
+}
+header{
+    height: 500px;
+    padding-top: 75px;
+
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxMDY2NjE4LWltYWdlLWt3dnkzdnltLmpwZw.jpg');
+   
+    background-size: cover;
+    background-position: center;
+    opacity: 70%;
+    line-height: 80px;
+    margin-bottom: 0px;
+    
+}
+header:hover{
+    opacity: 100%;
+    
+    
+}
+
+
+header span{
+    font-size: 30px;
+    color: aliceblue;
+    font-family: inherit;
+}
+.figure{
+  display: flex;
+ justify-content: space-around;
+ 
+  padding-top: 0px;
+  margin-top: 0px;
+  
+}
+.figure img{
+    border-radius: 5px;
+    
+}
+.figure img:hover{
+    border: 3px solid rgb(232, 178, 41);
+    
+}
+.figures{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom right,black,white
+    );
+    padding-top: 50px;
+    font-size: 25px;
+    
+   
+}
+.figures img{
+    border-radius: 50%;
+}
+.figures img:hover {
+    transform: scaleX(-1);
+  }
+  .drag{
+    width: 300px;
+    height: 300px;
+    color: brown;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
+    
+    font-family: 'Lobster', sans-serif;;
+    display: inline-block;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom right,black,white
+    );
+    
+
+
+  }
+.drag img{
+    border-radius: 50%;
+    border: 25px solid white;
+    animation: ani 6.5s linear infinite;
+    
+}
+@keyframes ani{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.drag img:hover{
+    
+   
+    border: 5px solid #ffee10;
+    opacity: 70%;
+}
+
+
+
+#caption{
+    color: coral;
+    font-size: 30px;
+    font-family: 'Lobster', sans-serif;;
+    margin-top: 50px;
+    text-align: center;
+}
+
+ 
+ figcaption::first-letter{
+    font-size: 40px;
+ }
+ #offers{
+    width: 70%;
+    height: 400px;
+    animation: offer 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+ }
+
+@keyframes offer {
+    from {left: 0%;}
+    to {left: 50%;}
+    
+  }
+#orders{
+    width: 100%;
+    height: 300px;
+    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/022/576/369/small_2x/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo.jpg') ;
+   color: white;
+   text-align: center;
+   padding-top: 150px;
+   margin-top: 20px;
+}
+.delivery{
+    border-radius: 5%;
+    padding-top: 15px;
+    background-color: rgb(130, 12, 31);
+    color: white;
+    height: 35px;
+    width: 150px;
+    border: 1px solid;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.delivery:hover{
+    text-decoration: underline;
+    color: #ffee10;
+   text-shadow: 0 0 5px #ffee10;
+}
+#location{
+    font-size: 18px;
+    color:white;
+    text-align: justify;
+    display: inline-block;
+    margin-top: 50px;
+    padding-right: 60px;
+}
+.icon{
+    display: inline-block;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     justify-content: space-between;
+}
+.icon:hover i{
+   font-size: 3rem;
+   color: #ffee10;
+   text-shadow: 0 0 5px #ffee10;
+    
+}
+.icon{
+    font-size: 2rem;
+    color: black;
+}
+#social{
+    height: 35px;
+    width: 250px;
+    float: right;
+    margin-top: 100px;
+  
+    margin-right: 120px;
+}
+#end{
+    background-color: brown;
+    margin-top: 20px;
+}
+footer{
+    text-align: center;
+    padding-top: 30px;
+    background-color: brown;
+    color: white;
+    
+}
+#abouts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    margin-top: 0px;
+    background-image: linear-gradient(to bottom right,black,white
+    );
+}
+#about-img{
+    object-position: center;
+    padding-left: 200px;
+    color: #ffee10;
+    padding-top: 10px;
+    
+}
+
+    
+
+#about-para{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    color: goldenrod;
+   font-family: 'Lobster', sans-serif;
+   animation: slide ;
+   animation-duration: 2s;
+   
+   
+}
+@keyframes slide{
+    from{
+        margin-left: 50%;
+    }
+    to{
+        margin-left: 0%
+    }
+}
+#about-para h1{
+    color: rgb(203, 23, 23);
+    font-size: 45px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+   
+
