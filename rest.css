@@ -81,6 +81,7 @@ header span{
 .figure img:hover{
     border: 3px solid rgb(232, 178, 41);
     
+    
 }
 .figures{
     display: flex;
@@ -109,17 +110,14 @@ header span{
     font-family: 'Lobster', sans-serif;;
     display: inline-block;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom right,black,white
-    );
-    
-
+   
 
   }
 .drag img{
     border-radius: 50%;
     border: 25px solid white;
     animation: ani 6.5s linear infinite;
-    
+   
 }
 @keyframes ani{
     to{
@@ -128,7 +126,7 @@ header span{
 }
 .drag img:hover{
     
-   
+    border-radius: 0;
     border: 5px solid #ffee10;
     opacity: 70%;
 }
@@ -237,26 +235,26 @@ footer{
     grid-template-columns: repeat(2,1fr);
     column-gap: 1rem;
     margin-top: 0px;
-    background-image: linear-gradient(to bottom right,black,white
+    background-image: linear-gradient(to bottom right,rgb(22, 21, 22),white
     );
 }
 #about-img{
     object-position: center;
     padding-left: 200px;
     color: #ffee10;
-    padding-top: 10px;
+    padding-top: 50px;
     
 }
 
     
 
 #about-para{
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
     padding-top: 70px;
     padding-bottom: 20px;
     padding-left: 25px;
-    color: goldenrod;
+    color: rgb(32, 218, 63);
    font-family: 'Lobster', sans-serif;
    animation: slide ;
    animation-duration: 2s;
